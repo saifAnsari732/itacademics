@@ -1,0 +1,34 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isAuthenticated() && (
+        request.auth.token.admin == true ||
+        request.auth.token.role == 'admin'
+      );
+    }
+
+    // Attachments folder: complaints/{complaintId}/{fileName}
+    match /complaints/{complaintId}/{fileName} {
+      // Allow read only to authenticated admins
+      allow read: if isAdmin();
+
+      // Only allow write through authorized server (Admin SDK) or admin client
+      // File restrictions: max 10MB, images or PDF only
+      allow write: if isAdmin() &&
+                   request.resource.size < 10 * 1024 * 1024 &&
+                   request.resource.contentType.matches('image/.*|application/pdf');
+    }
+
+    // Default deny
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

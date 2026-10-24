@@ -1,0 +1,43 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isAuthenticated() && (
+        request.auth.token.admin == true ||
+        request.auth.token.role == 'admin'
+      );
+    }
+
+    // Complaints collection
+    match /complaints/{complaintId} {
+      // By default, no public or anonymous client read access.
+      // Only authenticated admins with admin custom claim can read/list complaints directly from client.
+      allow read: if isAdmin();
+
+      // Client direct write / update / delete is DENIED.
+      // All creation, status updates, and note edits must go through the secure Next.js server API
+      // using the Firebase Admin SDK, ensuring server-side validation, secure ID generation,
+      // and strict field immutability.
+      allow create: if false;
+      allow update: if false;
+      allow delete: if isAdmin();
+    }
+
+    // Admins metadata collection (optional lookup)
+    match /admins/{adminId} {
+      allow read, write: if isAdmin();
+    }
+
+    // Default deny all other collections
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

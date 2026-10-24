@@ -1,0 +1,142 @@
+[
+  {
+    "id": "doc-1792746686544-10ue2",
+    "complaintId": "CMP-20261023-U23AC",
+    "fullName": "Saifuddin Ansari",
+    "mobile": "09905234866",
+    "email": "ansarisaifuddin732@gmail.com",
+    "category": "Network, VPN & Server Downtime",
+    "subject": "blockn",
+    "description": "sjdkjjbviohlvkrnen",
+    "address": "Madiyaon Lucknow (UP)",
+    "status": "Open",
+    "adminNote": "",
+    "createdAt": "2026-10-23T09:11:26.544Z",
+    "updatedAt": "2026-10-23T09:11:26.544Z",
+    "notificationStatus": {
+      "adminNotified": true,
+      "complainantNotified": true
+    }
+  },
+  {
+    "id": "doc-1792746382485-7ueds",
+    "complaintId": "CMP-20261023-NJA2B",
+    "fullName": "Saifuddin Ansari",
+    "mobile": "09905234866",
+    "email": "ansarisaifuddin7323442@gmail.com",
+    "category": "Billing, Invoicing & Subscriptions",
+    "subject": "blockB",
+    "description": "dhchjdbab jfj oub f",
+    "address": "Madiyaon Lucknow (UP)",
+    "status": "Open",
+    "adminNote": "",
+    "createdAt": "2026-10-23T09:06:22.485Z",
+    "updatedAt": "2026-10-23T09:06:22.485Z",
+    "notificationStatus": {
+      "adminNotified": true,
+      "complainantNotified": true
+    }
+  },
+  {
+    "id": "doc-1792746317164-ljmfc",
+    "complaintId": "CMP-20261023-LD8T7",
+    "fullName": "Saif Ansari",
+    "mobile": "9876543210",
+    "email": "ansarisaifuddin732@gmail.com",
+    "category": "Software & Bug Reports",
+    "subject": "ChunkLoadError Fixed Verification",
+    "description": "Testing complaint submission after resolving ChunkLoadError and cleaning Next.js cache.",
+    "address": "IT Academics Campus",
+    "status": "Open",
+    "adminNote": "",
+    "createdAt": "2026-10-23T09:05:17.164Z",
+    "updatedAt": "2026-10-23T09:05:17.164Z",
+    "notificationStatus": {
+      "adminNotified": true,
+      "complainantNotified": true
+    }
+  },
+  {
+    "id": "doc-1792746219319-157lf",
+    "complaintId": "CMP-20261023-MQGB7",
+    "fullName": "Saif Ansari",
+    "mobile": "9876543210",
+    "email": "ansarisaifuddin732@gmail.com",
+    "category": "Software & Bug Reports",
+    "subject": "Platform Code Sandbox crashing on submission",
+    "description": "Whenever I submit my Python lab assignment, the sandbox times out and returns a 504 Gateway Error.",
+    "address": "IT Academics Lab 3, Workstation 14",
+    "status": "Open",
+    "adminNote": "",
+    "createdAt": "2026-10-23T09:03:39.319Z",
+    "updatedAt": "2026-10-23T09:03:39.319Z",
+    "notificationStatus": {
+      "adminNotified": true,
+      "complainantNotified": true
+    }
+  },
+  {
+    "id": "doc-1792745047041-laawi",
+    "complaintId": "CMP-20261023-MF2MF",
+    "fullName": "Rahul Sharma",
+    "mobile": "9876543210",
+    "email": "ansarisaifuddin732@gmail.com",
+    "category": "Software & Bug Reports",
+    "subject": "Live verification test",
+    "description": "Checking whether Firestore rules are updated and complaint is saving.",
+    "address": "Lab 2",
+    "status": "Open",
+    "adminNote": "",
+    "createdAt": "2026-10-23T08:44:07.041Z",
+    "updatedAt": "2026-10-23T08:44:07.041Z",
+    "notificationStatus": {
+      "adminNotified": true,
+      "complainantNotified": true
+    }
+  },
+  {
+    "id": "seed-1",
+    "complaintId": "CMP-20261023-001",
+    "fullName": "Rahul Kumar",
+    "mobile": "9876543201",
+    "email": "rahul@itacademy.com",
+    "category": "Software & Bug Reports",
+    "subject": "Platform Code Sandbox crashing on submission",
+    "description": "Whenever I submit my Python lab assignment, the sandbox times out and returns a 504 Gateway Error.",
+    "address": "IT Academics Lab 3, Workstation 14",
+    "status": "Open",
+    "adminNote": "Assigned to DevOps engineering team for runtime evaluation.",
+    "createdAt": "2026-10-23T06:44:07.042Z",
+    "updatedAt": "2026-10-23T06:44:07.043Z"
+  },
+  {
+    "id": "seed-2",
+    "complaintId": "CMP-20261020-002",
+    "fullName": "Priya Sharma",
+    "mobile": "9876543202",
+    "email": "priya.s@itacademy.com",
+    "category": "Hardware & Workstation Issues",
+    "subject": "Dual Monitor HDMI display flickering",
+    "description": "The secondary monitor in Lab 2 randomly turns black during training workshops.",
+    "address": "Lab 2, Desk 08",
+    "status": "In Progress",
+    "adminNote": "Replacement HDMI 2.1 cable requested from inventory.",
+    "createdAt": "2026-10-20T08:44:07.043Z",
+    "updatedAt": "2026-10-22T08:44:07.043Z"
+  },
+  {
+    "id": "seed-3",
+    "complaintId": "CMP-20261018-003",
+    "fullName": "Amit Singh",
+    "mobile": "9876543203",
+    "email": "amit.tech@itacademy.com",
+    "category": "Account & Access Permissions",
+    "subject": "GitLab repository access permission denied",
+    "description": "Unable to push commit to sprint repository. Need maintainer access granted.",
+    "address": "Remote Workstation",
+    "status": "Resolved",
+    "adminNote": "Added student to IT Academics batch repository with contributor role.",
+    "createdAt": "2026-10-18T08:44:07.043Z",
+    "updatedAt": "2026-10-19T08:44:07.043Z"
+  }
+]
